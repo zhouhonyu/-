@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr1 = [1,2,3,4,5];
+        var arr2 = [1,4,9,6,7];
+        function Arr(arr1,arr2){
+            var ARR=[];
+            for(var i=0; i< arr2.length;i++){
+                for(var j=0; j<arr1.length; j++){
+                    if(arr1[j] === arr2[i]){
+                        ARR.push(arr1[j]);
+
+                    }
+                }
+            }
+            return ARR;
+        }
+        console.log(Arr(arr1,arr2))
+    </script>
+    
+</body>
+</html>
